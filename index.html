@@ -38,7 +38,21 @@
       </div>
       <div class="container"><div class="row"><div class="col-md-10 col-md-offset-1"><img src="img/items.png" class="img-responsive" alt="School"></div></div></div>
     </section>
-    <section id="Portfolio"><div class="container ptb"><div class="row centered"><h2 class="centered mb"><i class="fa fa-code"></i><b>Portfolio</b></h2><div class="row col-md-12" id="portfolioInnerLanguages"></div><div class="row col-md-12" id="portfolioInnerFrameworks"></div></div></div></section>
+    <section id="Portfolio">
+      <div class="container ptb">
+        <div class="row centered">
+          <div class="portfolioTitle">
+            <h2 class="centered mb"><i class="fa fa-code"></i><b>Portfolio</b></h2>
+            <label  class="col-md-1 col-md-offset-5" for="portfolioSort">Sort By:</label>
+            <select class="col-md-1 selectpicker" id="portfolioSort" onchange="sortPortfolio();">
+                <option value="PercentDesc" selected>↓ Percent</option>
+                <option value="PercentAsc">↑ Percent</option>
+                <option value="NameDesc">↓ Name</option>
+                <option value="NameAsc">↑ Name</option>
+            </select>
+            </br></br></br></br>
+          </div>
+      <div class="row col-md-12" id="portfolioInnerLanguages"></div><div class="row col-md-12" id="portfolioInnerFrameworks"></div></div></div></section>
     <section>
       <div class="container ptb">
         <div class="row">

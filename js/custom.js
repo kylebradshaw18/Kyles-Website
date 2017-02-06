@@ -31,21 +31,6 @@ let footerIcons = [
     { icon: "instagram", text:"Instagram", link:"https://www.instagram.com/kylebradshaw18/?hl=en"},
     { icon: "youtube",   text:"Youtube",   link:"https://www.youtube.com/user/18kylebradshaw"}];
 
-    let s = '<label for="languagesSort">Sort By:</label>'+'<select class="selectpicker" id="for="languagesSort">'+
-      '<option>Mustard</option>'+
-      '<option>Ketchup</option>'+
-      '<option>Relish</option>'+
-  '</select>';
-
-
-  let d =  '<label for="languagesSort">Sort By:</label>'+
-      '<select class="form-control" id="languagesSort">'+
-       ' <option selected>1</option>'+
-        '<option>2</option>'+
-        '<option>3</option>'+
-        '<option>4</option>'+
-      '</select>';
-
 $( document ).ready(function() {
   $('#loader').show();
   buildHeaderIcons(headerIcons);
@@ -66,8 +51,9 @@ function buildHeaderIcons(items){
 //Function to build the portfolio section
 function buildPortfolioInner(name, types){
   let html = [];
+  sortTypes(types);
   for(let index = 0; index < types.length; index++){
-    if ( index == 0 ) html.push('<h4 class="centered mb"><b>'+name+'</b></h4>' + s);
+    if ( index == 0 ) html.push('<h4 class="centered mb"><b>'+name+'</b></h4>');
     if(index % 2 == 0) html.push('<div class="row">');
     html.push('<div class="col-md-5"><div class="centered"><div class="row"><h6><b>'+types[index].name+'</b></h6>');
     let progressBarColor = ( types[index].color != null )? "progress-bar-"+types[index].color:"";
@@ -85,4 +71,35 @@ function buildFooterIcons(items){
   for(let item of items)
     html.push('<a href="'+item.link+'" target="_blank" data-toggle="tooltip" title="'+item.text+'"><i class="fa fa-'+item.icon+'"></i></a>');
   $('#FooterIcons').html(html.join(''));
+}
+
+function sortTypes(types){
+  debugger;
+  types.sort(function(a, b) {
+    switch($('#portfolioSort').val()){
+      case "PercentAsc":
+        return a.percent - b.percent;
+      case "NameAsc":
+          if (a.name < b.name)
+            return -1;
+          if (a.name > b.name)
+            return 1;
+          return 0;
+      case "NameDesc":
+          if (a.name < b.name)
+            return 1;
+          if (a.name > b.name)
+            return -1;
+          return 0;
+      default:
+        return b.percent - a.percent;
+    }
+  });
+  debugger;
+}
+
+function sortPortfolio(){
+  debugger;
+  buildPortfolioInner("Languages", languages);
+  buildPortfolioInner("Frameworks", frameworks);
 }
