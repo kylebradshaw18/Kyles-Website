@@ -17,6 +17,7 @@ let frameworks = [
     {name:"Angular JS",percent:80},
     {name:"Classic ASP",percent:70},
     {name:"ASP.NET",percent:90},
+    {name:"ReactJs",percent:40},
     {name:"Angular 2",percent:75}];
 let footerIcons = [
     { icon: "envelope",  text:"Email",     link:"mailto:kylebradshaw18@gmail.com?subject=Website Contact"},
