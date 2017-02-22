@@ -4,19 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Personal Website">
+    <meta name="keywords" content="HTML,CSS,JavaScript,JQuery,Bootstrap,Software Developer, Computer Science, Database, Personal, Website">
     <meta name="author" content="Kyle Bradshaw">
     <title>Kyle Bradshaw</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon.png">
-    
-    <script src="https://use.fontawesome.com/9e9dbd82b7.js"></script>
   </head>
   <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8FWJVF"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="loader"></div>
     <header id="header"><div class="container centered"><div class="row"><div class="col-md-8 col-md-offset-2"><h1>Hello, my name is <b>Kyle Bradshaw</b>.<br/><br/>I'm a <b>Software Developer</b>.</h1></div></div><div class="row mt" id="HeaderIcons"></div></div></header>
     <section>
@@ -34,8 +31,8 @@
           <div class="col-md-6">
             <p>
               In school I have done everything from building personsal Operating Systems that live 
-              within the browser to building websites 
-              using PHP and Ajax calls to make responsive sites.
+              within the browser to building websites using PHP and Ajax calls to make responsive sites.
+              I have also made Java desktop applications and Java programs that can run from the command line.
             </p>
           </div>
         </div>
@@ -47,14 +44,7 @@
         <div class="row centered">
           <div class="portfolioTitle">
             <h2 class="centered mb"><i class="fa fa-code"></i><b>Portfolio</b></h2>
-            <label  class="col-md-1 col-md-offset-5" for="portfolioSort">Sort By:</label>
-            <select class="col-md-1 selectpicker" id="portfolioSort" onchange="buildPortfolioInner('Languages', languages);buildPortfolioInner('Frameworks', frameworks);">
-                <option value="PercentDesc" selected>↓ Percent</option>
-                <option value="PercentAsc">↑ Percent</option>
-                <option value="NameDesc">↓ Name</option>
-                <option value="NameAsc">↑ Name</option>
-            </select>
-            </br></br></br></br>
+            <label  class="col-md-1 col-md-offset-5" for="portfolioSort">Sort By:</label><select class="col-md-1 selectpicker" id="portfolioSort" onchange="buildPortfolioInner('Languages', languages);buildPortfolioInner('Frameworks', frameworks);"><option value="PercentDesc" selected>↓ Percent</option><option value="PercentAsc">↑ Percent</option><option value="NameDesc">↓ Name</option><option value="NameAsc">↑ Name</option></select></br></br></br></br>
           </div>
       <div class="row col-md-12" id="portfolioInnerLanguages"></div><div class="row col-md-12" id="portfolioInnerFrameworks"></div></div></div></section>
     <section>
@@ -76,8 +66,7 @@
           </div>
         </div>
       </div>
-      <div class="container"><div class="row"><div class="col-md-10 col-md-offset-1"><img src="img/lakeLife.png" class="img-responsive" alt="Lake Life" style="margin:0 auto;"><video class="centered" autoplay loop muted><source src="img/gainerChickenRock.mp4" type="video/mp4"></video>
-      </div></div></div>
+      <div class="container"><div class="row"><div class="col-md-10 col-md-offset-1"><img src="img/lakeLife.png" class="img-responsive" alt="Lake Life" style="margin:0 auto;"><video class="centered" autoplay loop muted><source src="img/gainerChickenRock.mp4" type="video/mp4"></video></div></div></div>
     </section>
     <footer id="footer"><div class="container"><div class="row centered"><div class="col-md-8 col-md-offset-2" id="FooterIcons"></div></div></div></footer>
   </body>
