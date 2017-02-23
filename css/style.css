@@ -12,7 +12,7 @@ html,body {height: 100%;}
 .ptb {padding-top: 50px; padding-bottom: 80px;}
 ::-moz-selection  {color: #fff;text-shadow:none;background:#2B2E31;}
 ::selection {color: #fff;text-shadow:none;background:#2B2E31;}
-#header {background: linear-gradient(rgba(138,193,248,.4),rgba(138,193,248,.4)), url(../img/glasses.png) no-repeat center top;padding-top: 5px;background-attachment: relative;background-position: center center;min-height: 700px;width: 100%;-webkit-background-size: 100%;-moz-background-size: 100%;-o-background-size: 100%;background-size: 100%;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;color: white;}
+#header {background: linear-gradient(rgba(138,193,248,.4),rgba(138,193,248,.4)), url(../img/glasses.png) no-repeat top;padding-top: 5px;background-attachment: relative;min-height: 700px;width: 100%;-webkit-background-size: 100%;-moz-background-size: 100%;-o-background-size: 100%;background-size: 100%;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;color: white;}
 #header .container {padding-top: 150px;padding-bottom: 150px;}
 #header h3 {margin-top: 10px;}
 #header i {font-size: 50px;}
