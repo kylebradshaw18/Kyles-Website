@@ -18,7 +18,8 @@ let frameworks = [
     {name:"Classic ASP",percent:70},
     {name:"ASP.NET",percent:90},
     {name:"ReactJs",percent:40},
-    {name:"Angular 2",percent:75}];
+    {name:"Angular 2",percent:75},
+    {name:"Laravel",percent:25}];
 let footerIcons = [
     { icon: "envelope",  text:"Email",     link:"mailto:kylebradshaw18@gmail.com?subject=Website Contact"},
     { icon: "phone",     text:"Phone",     link:"tel:+18452402066"},
