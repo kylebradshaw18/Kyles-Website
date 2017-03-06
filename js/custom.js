@@ -23,6 +23,7 @@ let frameworks = [
 let footerIcons = [
     { icon: "envelope",  text:"Email",     link:"mailto:kylebradshaw18@gmail.com?subject=Website Contact"},
     { icon: "phone",     text:"Phone",     link:"tel:+18452402066"},
+    { icon: "file-pdf-o",text:"Resume",    link:"./Resume.pdf"},
     { icon: "linkedin",  text:"LinkedIn",  link:"https://www.linkedin.com/in/kyle-bradshaw-012095135?trk=nav_responsive_tab_profile"},
     { icon: "github",    text:"GitHub",    link:"https://github.com/kylebradshaw18"},
     { icon: "bitbucket", text:"BitBucket", link:"https://bitbucket.org/kyle_bradshaw1"},
