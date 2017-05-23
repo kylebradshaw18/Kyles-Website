@@ -1,36 +1,40 @@
-let headerIcons = [{icon: "desktop",text:"Full Stack Web Developer"},{icon: "database",text:"Database Developer"},{icon: "database",text:"Database Designer"}];
+let headerIcons = [new icon("desktop","Full Stack Web Developer"),new icon("database","Database Developer"),new icon("database","Database Designer")];
 let bootstrapColors = [null,"success","info","warning","danger"];
 let languages = [
-    {name:"HTML5",percent:95},
-    {name:"Javascript",percent:90},
-    {name:"Typescript",percent:85},
-    {name:"JQuery",percent:80},
-    {name:"SQL",percent:85},
-    {name:"Java",percent:80},
-    {name:"C#",percent:80},
-    {name:"PHP",percent:80},
-    {name:"Swift",percent:20},
-    {name:"Haskell",percent:25},
-    {name:"Visual Basic",percent:70},
-    {name:"CSS",percent:80}];
+    new language("HTML5", 95),
+    new language("Javascript", 90),
+    new language("Typescript", 85),
+    new language("JQuery", 80),
+    new language("SQL", 85),
+    new language("Java", 80),
+    new language("C#", 80),
+    new language("PHP", 80),
+    new language("Swift", 20),
+    new language("Haskell", 25),
+    new language("Visual Basic", 70),
+    new language("Python", 50),
+    new language("CSS", 80)];
 let frameworks = [
-    {name:"Angular JS",percent:80},
-    {name:"Classic ASP",percent:70},
-    {name:"ASP.NET",percent:90},
-    {name:"ReactJs",percent:40},
-    {name:"Angular 2",percent:75},
-    {name:"Laravel",percent:25}];
+    new language("Angular JS", 80),
+    new language("Classic ASP", 70),
+    new language("ASP.NET", 90),
+    new language("Entity Framework", 80),
+    new language("ASP.NET CORE", 70),
+    new language("ASP.NET MVC", 70),
+    new language("ReactJs", 40),
+    new language("Angular 2", 75),
+    new language("Laravel", 25)];
 let footerIcons = [
-    { icon: "envelope",  text:"Email",     link:"mailto:kylebradshaw18@gmail.com?subject=Website Contact"},
-    { icon: "phone",     text:"Phone",     link:"tel:+18452402066"},
-    { icon: "file-pdf-o",text:"Resume",    link:"./Resume.pdf"},
-    { icon: "linkedin",  text:"LinkedIn",  link:"https://www.linkedin.com/in/kyle-bradshaw-012095135?trk=nav_responsive_tab_profile"},
-    { icon: "github",    text:"GitHub",    link:"https://github.com/kylebradshaw18"},
-    { icon: "bitbucket", text:"BitBucket", link:"https://bitbucket.org/kyle_bradshaw1"},
-    { icon: "facebook",  text:"Facebook",  link:"https://www.facebook.com/kylebradshaw18"},
-    { icon: "twitter",   text:"Twitter",   link:"https://twitter.com/kylebradshaw18"},
-    { icon: "instagram", text:"Instagram", link:"https://www.instagram.com/kylebradshaw18/?hl=en"},
-    { icon: "youtube",   text:"Youtube",   link:"https://www.youtube.com/user/18kylebradshaw"}];
+    new icon("envelope","Email","mailto:kylebradshaw18@gmail.com?subject=Website Contact"),
+    new icon("phone","Phone","tel:+18452402066"),
+    new icon("file-pdf-o","Resume","./Resume.pdf"),
+    new icon("linkedin","LinkedIn","https://www.linkedin.com/in/kyle-bradshaw-012095135?trk=nav_responsive_tab_profile"),
+    new icon("github","GitHub","https://github.com/kylebradshaw18"),
+    new icon("bitbucket","BitBucket","https://bitbucket.org/kyle_bradshaw1"),
+    new icon("facebook","Facebook","https://www.facebook.com/kylebradshaw18"),
+    new icon("twitter","Twitter","https://twitter.com/kylebradshaw18"),
+    new icon("instagram","Instagram","https://www.instagram.com/kylebradshaw18/?hl=en"),
+    new icon("youtube","Youtube","https://www.youtube.com/user/18kylebradshaw")];
 $( document ).ready(function() {
   $('#loader').show();
   buildHeaderIcons(headerIcons);
@@ -94,4 +98,14 @@ function shuffle(array) {
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
+}
+//Constructors
+function language(name, percent){
+  this.name = name;
+  this.percent = percent;
+}
+function icon(icon, text, link){
+  this.icon = icon;
+  this.text = text;
+  this.link = (typeof link == undefined || typeof link == null) ? null : link;
 }
