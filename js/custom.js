@@ -1,26 +1,28 @@
-let headerIcons = [new icon("desktop","Full Stack Web Developer"),new icon("database","Database Developer"),new icon("database","Database Designer")];
+let headerIcons = [new icon("desktop","Full Stack Web Developer"),new icon("database","Database Desginer"),new icon("code","Software Developer")];
 let bootstrapColors = [null,"success","info","warning","danger"];
 let languages = [
-    new language("HTML5", 95),
+    new language("HTML5", 99),
     new language("Javascript", 90),
     new language("Typescript", 85),
     new language("JQuery", 80),
-    new language("SQL", 85),
+    new language("SQL", 90),
     new language("Java", 80),
-    new language("C#", 80),
+    new language("C#", 99),
     new language("PHP", 80),
     new language("Swift", 20),
     new language("Haskell", 25),
     new language("Visual Basic", 70),
     new language("Python", 50),
-    new language("CSS", 80)];
+    new language("R", 40),
+    new language("SCSS", 80)];
 let frameworks = [
     new language("Angular JS", 80),
     new language("Classic ASP", 70),
-    new language("ASP.NET", 90),
+    new language("ASP.NET Web forms", 90),
     new language("Entity Framework", 80),
-    new language("ASP.NET CORE", 70),
-    new language("ASP.NET MVC", 70),
+    new language("Dapper", 80),
+    new language("ASP.NET CORE", 80),
+    new language("ASP.NET MVC", 90),
     new language("ReactJs", 40),
     new language("Angular 2", 75),
     new language("Laravel", 25)];
@@ -28,7 +30,7 @@ let footerIcons = [
     new icon("envelope","Email","mailto:kylebradshaw18@gmail.com?subject=Website Contact"),
     new icon("phone","Phone","tel:+18452402066"),
     new icon("file-pdf-o","Resume","./Resume.pdf"),
-    new icon("linkedin","LinkedIn","https://www.linkedin.com/in/kyle-bradshaw-012095135?trk=nav_responsive_tab_profile"),
+    new icon("linkedin","LinkedIn","https://www.linkedin.com/in/kyle-bradshaw"),
     new icon("github","GitHub","https://github.com/kylebradshaw18"),
     new icon("bitbucket","BitBucket","https://bitbucket.org/kyle_bradshaw1"),
     new icon("facebook","Facebook","https://www.facebook.com/kylebradshaw18"),
