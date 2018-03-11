@@ -52,7 +52,9 @@ let certificates = [
   new certificate("DAT206x: Analyzing and Visualizing Data with Excel","https://courses.edx.org/certificates/bf3ad5a46e894f4d8e1b56091ffa5855"),
   new certificate("DAT211x: Developing Intelligent Apps and Bots","https://courses.edx.org/certificates/c3feecc381734784bf340a7baa5fb136"),
   new certificate("DEV237x: Microsoft Professional Program : Front End Web Development","https://courses.edx.org/certificates/30aca75413a449d3bbc8b99690a086e5"),
-  new certificate("PH125.1x: Data Science: R Basics","https://courses.edx.org/certificates/917e67e0fb6b4958b0ba6643b106be6d")
+  new certificate("PH125.1x: Data Science: R Basics","https://courses.edx.org/certificates/917e67e0fb6b4958b0ba6643b106be6d"),
+  new certificate("DEV203x: Introduction to Bootstrap - A Tutorial","https://courses.edx.org/certificates/237296096de244ae8ae791f98d72bead"),
+  new certificate("DEV208x: Introduction to jQuery","https://courses.edx.org/certificates/09b2af922eb44c609dbe1e84c4fdc837")
 ];
 let footerIcons = [
     new icon("envelope","Email","mailto:kylebradshaw18@gmail.com?subject=Website Contact"),
