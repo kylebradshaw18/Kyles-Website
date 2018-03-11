@@ -54,7 +54,8 @@ let certificates = [
   new certificate("DEV237x: Microsoft Professional Program : Front End Web Development","https://courses.edx.org/certificates/30aca75413a449d3bbc8b99690a086e5"),
   new certificate("PH125.1x: Data Science: R Basics","https://courses.edx.org/certificates/917e67e0fb6b4958b0ba6643b106be6d"),
   new certificate("DEV203x: Introduction to Bootstrap - A Tutorial","https://courses.edx.org/certificates/237296096de244ae8ae791f98d72bead"),
-  new certificate("DEV208x: Introduction to jQuery","https://courses.edx.org/certificates/09b2af922eb44c609dbe1e84c4fdc837")
+  new certificate("DEV208x: Introduction to jQuery","https://courses.edx.org/certificates/09b2af922eb44c609dbe1e84c4fdc837"),
+  new certificate("DEV220x: AngularJS: Framework Fundamentals","https://courses.edx.org/certificates/f6eb597d56c4439999f5cf14fa7914e7")
 ];
 let footerIcons = [
     new icon("envelope","Email","mailto:kylebradshaw18@gmail.com?subject=Website Contact"),
