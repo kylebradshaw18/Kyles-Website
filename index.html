@@ -15,7 +15,7 @@
   </head>
   <body>
     <div id="loader"></div>
-    <header id="header"><div class="container centered"><div class="row headerTitle"><div class="col-md-8 col-md-offset-2 "><h1>Hello, my name is <b>Kyle Bradshaw</b>.<br/><br/>I'm a <b>Software Engineer</b>.</h1></div></div><div class="row mt" id="HeaderIcons"></div></div></header>
+    <header id="header"><div class="container centered"><div class="row headerTitle"><div class="col-md-8 col-md-offset-2 "><h1>Hello, my name is <b>Kyle Bradshaw</b>.<br/><br/>I'm a <b>Computer Scientist</b>.</h1></div></div><div class="row mt" id="HeaderIcons"></div></div></header>
     <section>
       <div class="container ptb">
         <div class="row">
@@ -44,9 +44,12 @@
         <div class="row centered">
           <div class="portfolioTitle">
             <h2 class="centered mb"><i class="fa fa-code"></i><b>Portfolio</b></h2>
-            <div class="row centered"><label for="portfolioSort">Sort By</label>&nbsp;<select class="selectpicker" id="portfolioSort" onchange="buildPortfolioInner('Languages', languages);buildPortfolioInner('Frameworks', frameworks);"><option value="PercentDesc" selected>↓ Percent</option><option value="PercentAsc">↑ Percent</option><option value="NameDesc">↓ Name</option><option value="NameAsc">↑ Name</option></select></div></br></br>
+            <div class="row centered"><label for="portfolioSort">Sort By</label>&nbsp;<select class="selectpicker" id="portfolioSort" onchange="buildPortfolioInner('Languages', languages);buildPortfolioInner('Frameworks', frameworks);buildPortfolioInnerCert('Certificates', certificates);"><option value="PercentDesc" selected>↓ Percent</option><option value="PercentAsc">↑ Percent</option><option value="NameDesc">↓ Name</option><option value="NameAsc">↑ Name</option></select></div></br></br>
           </div>
-      <div class="row col-md-12" id="portfolioInnerLanguages"></div><div class="row col-md-12" id="portfolioInnerFrameworks"></div></div></div></section>
+      <div class="row col-md-12" id="portfolioInnerLanguages"></div>
+      <div class="row col-md-12" id="portfolioInnerFrameworks"></div>
+      <div class="row col-md-12" id="portfolioInnerCertificates"></div>
+    </div></div></section>
     <section>
       <div class="container ptb">
         <div class="row">

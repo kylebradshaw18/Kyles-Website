@@ -19,7 +19,7 @@ html,body {height: 100%;}
 #header i {font-size: 50px;}
 section{padding-top: 50px;padding-bottom: 50px;}
 #Portfolio {background: #f5f5f5;}
-#portfolioInnerLanguages{padding-bottom: 90px;}
+#portfolioInnerLanguages, #portfolioInnerFrameworks{padding-bottom: 90px;}
 video {width: 70%; border-radius: 20px; display:block; margin:0 auto;}
 #footer {padding-top: 50px;padding-bottom: 50px;background-color: #22A7F0;}
 #footer i {margin-right: 30px;font-size: 35px;}
