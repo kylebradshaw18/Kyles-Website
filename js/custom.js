@@ -56,7 +56,8 @@ let certificates = [
   new certificate("DEV203x: Introduction to Bootstrap - A Tutorial","https://courses.edx.org/certificates/237296096de244ae8ae791f98d72bead"),
   new certificate("DEV208x: Introduction to jQuery","https://courses.edx.org/certificates/09b2af922eb44c609dbe1e84c4fdc837"),
   new certificate("DEV220x: AngularJS: Framework Fundamentals","https://courses.edx.org/certificates/f6eb597d56c4439999f5cf14fa7914e7"),
-  new certificate("DEV221x: AngularJS: Advanced Framework Techniques","https://courses.edx.org/certificates/dc8648b75b9249e28f5611fae154fb14")
+  new certificate("DEV221x: AngularJS: Advanced Framework Techniques","https://courses.edx.org/certificates/dc8648b75b9249e28f5611fae154fb14"),
+  new certificate("DAT263x: Introduction to Artificial Intelligence (AI)","https://courses.edx.org/certificates/afe640024bfd48af84b2fa5deb5e56f3")
 ];
 let footerIcons = [
     new icon("envelope","Email","mailto:kylebradshaw18@gmail.com?subject=Website Contact"),
@@ -153,16 +154,22 @@ function shuffle(array) {
   }
 }
 //Constructors
-function language(name, percent){
-  this.name = name;
-  this.percent = percent;
+class language {
+  constructor(name, percent) {
+    this.name = name;
+    this.percent = percent;
+  }
 }
-function icon(icon, text, link){
-  this.icon = icon;
-  this.text = text;
-  this.link = (typeof link == undefined || typeof link == null) ? null : link;
+class icon {
+  constructor(icon, text, link) {
+    this.icon = icon;
+    this.text = text;
+    this.link = (typeof link == undefined || typeof link == null) ? null : link;
+  }
 }
-function certificate(name, url){
-  this.name = name;
-  this.url = url;
+class certificate {
+  constructor(name, url) {
+    this.name = name;
+    this.url = url;
+  }
 }
