@@ -154,22 +154,16 @@ function shuffle(array) {
   }
 }
 //Constructors
-class language {
-  constructor(name, percent) {
-    this.name = name;
-    this.percent = percent;
-  }
+function language(name, percent){
+  this.name = name;
+  this.percent = percent;
 }
-class icon {
-  constructor(icon, text, link) {
-    this.icon = icon;
-    this.text = text;
-    this.link = (typeof link == undefined || typeof link == null) ? null : link;
-  }
+function icon(icon, text, link){
+  this.icon = icon;
+  this.text = text;
+  this.link = (typeof link == undefined || typeof link == null) ? null : link;
 }
-class certificate {
-  constructor(name, url) {
-    this.name = name;
-    this.url = url;
-  }
+function certificate(name, url){
+  this.name = name;
+  this.url = url;
 }
