@@ -58,7 +58,8 @@ let certificates = [
   new certificate("DEV220x: AngularJS: Framework Fundamentals","https://courses.edx.org/certificates/f6eb597d56c4439999f5cf14fa7914e7"),
   new certificate("DEV221x: AngularJS: Advanced Framework Techniques","https://courses.edx.org/certificates/dc8648b75b9249e28f5611fae154fb14"),
   new certificate("DAT263x: Introduction to Artificial Intelligence (AI)","https://courses.edx.org/certificates/afe640024bfd48af84b2fa5deb5e56f3"),
-  new certificate("DAT256x: Essential Mathematics for Artificial Intelligence","https://courses.edx.org/certificates/0ea7810bf5c44d4ebd709209054a88cc")
+  new certificate("DAT256x: Essential Mathematics for Artificial Intelligence","https://courses.edx.org/certificates/0ea7810bf5c44d4ebd709209054a88cc"),
+  new certificate("DAT249x: Ethics and Law in Data and Analytics","https://courses.edx.org/certificates/423f2b9e72104e81bea4e8e3f3199d5d")
 ];
 let footerIcons = [
     new icon("envelope","Email","mailto:kylebradshaw18@gmail.com?subject=Website Contact"),
