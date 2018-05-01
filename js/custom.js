@@ -60,7 +60,8 @@ let certificates = [
   new certificate("DAT263x: Introduction to Artificial Intelligence (AI)","https://courses.edx.org/certificates/afe640024bfd48af84b2fa5deb5e56f3"),
   new certificate("DAT256x: Essential Mathematics for Artificial Intelligence","https://courses.edx.org/certificates/0ea7810bf5c44d4ebd709209054a88cc"),
   new certificate("DAT249x: Ethics and Law in Data and Analytics","https://courses.edx.org/certificates/423f2b9e72104e81bea4e8e3f3199d5d"),
-  new certificate("DAT102x: Microsoft Professional Capstone : Data Science","https://courses.edx.org/certificates/c6ae284b7bec42c9b10fba8ac5ef985d")
+  new certificate("DAT102x: Microsoft Professional Capstone : Data Science","https://courses.edx.org/certificates/c6ae284b7bec42c9b10fba8ac5ef985d"),
+  new certificate("DAT236x: Deep Learning Explained","https://courses.edx.org/certificates/42f465f825b244748488b565f18f28ec")
 ];
 let footerIcons = [
     new icon("envelope","Email","mailto:kylebradshaw18@gmail.com?subject=Website Contact"),
