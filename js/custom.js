@@ -8,13 +8,10 @@ let languages = [
     new language("SQL", 90),
     new language("Java", 80),
     new language("C#", 99),
-    new language("PHP", 80),
-    new language("Swift", 20),
-    new language("Haskell", 25),
+    new language("PHP", 60),
     new language("Visual Basic", 70),
-    new language("Python", 70),
-    new language("R", 40),
-    new language("SCSS", 80)];
+    new language("Python", 80),
+    new language("R", 20)];
 let frameworks = [
     new language("Angular JS", 80),
     new language("Classic ASP", 70),
@@ -23,9 +20,7 @@ let frameworks = [
     new language("Dapper", 80),
     new language("ASP.NET CORE", 80),
     new language("ASP.NET MVC", 90),
-    new language("ReactJs", 40),
-    new language("Angular 2", 75),
-    new language("Laravel", 25)];
+    new language("Angular 2", 75)];
 let certificates = [
   new certificate("DAT210x: Programming with Python for Data Science", "https://courses.edx.org/certificates/d72c63decab84f2086133a3ef6fa9297"),
   new certificate("DEV218x: Advanced CSS Concepts", "https://courses.edx.org/certificates/7768968d7c40422492be77b204fc4e31"),
