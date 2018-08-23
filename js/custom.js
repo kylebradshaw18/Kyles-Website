@@ -1,4 +1,4 @@
-let headerIcons = [new icon("desktop","Full Stack Web Developer"),new icon("database","Database Desginer"),new icon("code","Software Engineer")];
+let headerIcons = [new icon("desktop","Full Stack Developer"),new icon("database","Database Desginer"),new icon("code","Data Analyst")];
 let bootstrapColors = [null,"success","info","warning","danger"];
 let languages = [
     new language("HTML5", 99),
@@ -11,16 +11,20 @@ let languages = [
     new language("PHP", 60),
     new language("Visual Basic", 70),
     new language("Python", 80),
-    new language("R", 20)];
+    new language("T-SQL", 70)
+  ];
 let frameworks = [
-    new language("Angular JS", 80),
+    new language("Angular", 80),
     new language("Classic ASP", 70),
     new language("ASP.NET Web forms", 90),
     new language("Entity Framework", 80),
     new language("Dapper", 80),
     new language("ASP.NET CORE", 80),
     new language("ASP.NET MVC", 90),
-    new language("Angular 2", 75)];
+    new language("ML.net", 40),
+    new language("scikit-learn", 60),
+    new language("Azure Machine Learning Studio", 80)
+  ];
 let certificates = [
   new certificate("DAT210x: Programming with Python for Data Science", "https://courses.edx.org/certificates/d72c63decab84f2086133a3ef6fa9297"),
   new certificate("DEV218x: Advanced CSS Concepts", "https://courses.edx.org/certificates/7768968d7c40422492be77b204fc4e31"),
@@ -62,7 +66,7 @@ let certificates = [
 let footerIcons = [
     new icon("envelope","Email","mailto:kylebradshaw18@gmail.com?subject=Website Contact"),
     new icon("phone","Phone","tel:+18452402066"),
-    new icon("file-pdf-o","Resume","./Resume.pdf"),
+    new icon("file-pdf-o","Resume","./KyleBradshawResume.pdf"),
     new icon("linkedin","LinkedIn","https://www.linkedin.com/in/kyle-bradshaw"),
     new icon("github","GitHub","https://github.com/kylebradshaw18"),
     new icon("bitbucket","BitBucket","https://bitbucket.org/kyle_bradshaw1"),
