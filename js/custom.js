@@ -66,7 +66,7 @@ let certificates = [
 let footerIcons = [
     new icon("envelope","Email","mailto:kylebradshaw18@gmail.com?subject=Website Contact"),
     new icon("phone","Phone","tel:+18452402066"),
-    new icon("file-pdf-o","Resume","./KyleBradshawResume.pdf"),
+    new icon("file-pdf-o","Resume","./Resume.pdf"),
     new icon("linkedin","LinkedIn","https://www.linkedin.com/in/kyle-bradshaw"),
     new icon("github","GitHub","https://github.com/kylebradshaw18"),
     new icon("bitbucket","BitBucket","https://bitbucket.org/kyle_bradshaw1"),
