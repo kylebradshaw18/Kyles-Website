@@ -98,7 +98,7 @@ function buildPortfolioInner(name, types){
     if(index % 2 == 0) html.push('<div class="row">');
     html.push('<div class="col-md-5"><div class="centered"><div class="row"><h6><b>'+types[index].name+'</b></h6>');
     let progressBarColor = ( bootstrapColors[colorsIndex] != null )? "progress-bar-"+bootstrapColors[colorsIndex]:"";
-    html.push('<div class="progress"><div class="progress-bar '+progressBarColor+' progress-bar-striped active" role="progressbar" aria-valuenow="'+types[index].percent+'" aria-valuemin="0" aria-valuemax="100" style="width:'+types[index].percent+'%">'+types[index].percent+'%</div></div>');
+    //html.push('<div class="progress"><div class="progress-bar '+progressBarColor+' progress-bar-striped active" role="progressbar" aria-valuenow="'+types[index].percent+'" aria-valuemin="0" aria-valuemax="100" style="width:'+types[index].percent+'%">'+types[index].percent+'%</div></div>');
     html.push('</div></div></div>');
     if(index % 2 == 0) html.push('<div class="col-md-2"></div>');
     if(index % 2 != 0 || index == types.length - 1) html.push('</div>');
