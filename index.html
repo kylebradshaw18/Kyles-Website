@@ -1,75 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal Website">
-    <meta name="keywords" content="HTML,CSS,JavaScript,JQuery,Bootstrap,Software Developer, Computer Science, Database, Personal, Website">
-    <meta name="author" content="Kyle Bradshaw">
     <title>Kyle Bradshaw</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    </noscript>
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.1" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
   </head>
-  <body>
-    <div id="loader"></div>
-    <header id="header"><div class="container centered"><div class="row headerTitle"><div class="col-md-8 col-md-offset-2 "><h1>Hello, my name is <b>Kyle Bradshaw</b>.<br/><br/>I'm a <b>Computer Scientist</b>.</h1></div></div><div class="row mt" id="HeaderIcons"></div></div></header>
-    <section>
-      <div class="container ptb">
-        <div class="row">
-          <h2 class="centered mb"><i class="fa fa-book"></i>&nbsp;<b>Education</b></h2>
-          <p class="col-md-6">
-            I graduated from Marist College in May 2017 with a Bachelor's of Science Degree in Computer Science.
-            Through my college curriculum I have been exposed to the fundementals of programming, networking, database design,
-            computer architecture and design principles for creative, interactive user interfaces.
-            Specifically, I have built personal operating systems that live within the browser,
-            as well as building websites using PHP and Ajax calls to make responsive web applications. I have also created Java
-            desktop applications and Java programs that can run from the command line.
-          </p>
-          <p class="col-md-6">
-            My practical work experience includes an internship as a Software Developer at Precision Care Software. There I have learned about the 
-            life cycle of applications, working on a team with other developers and managers to bring new features to the product.
-            I have also sharpened my skills of being a full stack developer by learning new front end and back end 
-            frameworks, as well as new languages. In addition, I learned new <abbr title="Structured Query Language">SQL</abbr> functions and syntac 
-            for very complicated queries that they do not teach in school. 
-          </p>
-        </div>
-      </div>
-      <div class="container"><div class="row"><div class="col-md-10 col-md-offset-1"><img src="img/items.png" class="img-responsive" alt="School"></div></div></div>
-    </section>
-    <section id="Portfolio">
-      <div class="container ptb">
-        <div class="row centered">
-          <div class="portfolioTitle">
-            <h2 class="centered mb"><i class="fa fa-code"></i><b>Portfolio</b></h2>
-            <div class="row centered"><label for="portfolioSort">Sort By</label>&nbsp;<select class="selectpicker" id="portfolioSort" onchange="buildPortfolioInner('Languages', languages);buildPortfolioInner('Frameworks', frameworks);buildPortfolioInnerCert('Certificates', certificates);"><option value="PercentDesc" selected>↓ Percent</option><option value="PercentAsc">↑ Percent</option><option value="NameDesc">↓ Name</option><option value="NameAsc">↑ Name</option></select></div></br></br>
+  <body class="bg-light" id="top">
+    <div class="page-content">
+      <div class="container">
+        <div class="resume-container">
+          <div class="shadow-1-strong bg-white my-5" id="intro">
+            <div class="bg-info text-white">
+              <div class="cover bg-image"><!--<img src="images/TechnologyBackground.jpg" alt="Technology Background"/>-->
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
+                  <div class="text-center p-5" style="padding:5rem !important">
+                    <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/kb-avatar.jpg" width="250" height="250"/></div>
+                    <div class="header-bio mt-3">
+                      <div data-aos="zoom-in" data-aos-delay="0">
+                        <h2 class="h1">Kyle Bradshaw</h2>
+                        <p>Software Developer</p>
+                      </div>
+                      <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
+                        <nav role="navigation">
+                          <ul class="nav justify-content-center">
+                            <li class="nav-item"><a class="nav-link" href="mailto:kylebradshaw18@gmail.com?subject=Website Contact" title="Email" target="_blank"><i class="far fa-envelope"></i><span class="menu-title sr-only">Email</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="tel:+18452402066" title="Phone" target="_blank"><i class="fas fa-phone"></i><span class="menu-title sr-only">Phone</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="./Resume.pdf" title="Resume" target="_blank"><i class="far fa-file-pdf"></i><span class="menu-title sr-only">Resume</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://github.com/kylebradshaw18" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://bitbucket.org/kyle_bradshaw1" title="Bitbucket"><i class="fab fa-bitbucket"></i><span class="menu-title sr-only">Bitbucket</span></a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-      <div class="row col-md-12" id="portfolioInnerLanguages"></div>
-      <div class="row col-md-12" id="portfolioInnerFrameworks"></div>
-      <div class="row col-md-12" id="portfolioInnerCertificates"></div>
-    </div></div></section>
-    <section>
-      <div class="container ptb">
-        <div class="row">
-          <h2 class="centered mb"><i class="fa fa-gratipay"></i>&nbsp;<b>Interests</b></h2>
-          <p class="col-md-6">
-            I'm lucky enough to have grown up in upstate New York where I can spend my free time outdoors hiking, playing golf 
-            and snowboarding, all very close to home. When i'm not working or outside, I also enjoy watching and playing sports. 
-            I closely follow college and professional football.
-          </p>
-          <p class="col-md-6">
-            I spend the weekends during the late winter/early spring with my extended family at our cabin in the Catskills carrying 
-            on a family tradition of over 70 years of making maple syrup. When the warmer weather arrives, you can find me on our 
-            family's boat on Candlewood Lake in Connecticut.
-          </p>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="about">
+            <div class="about-section">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2 class="h2 fw-light mb-4">About Me</h2>
+                  <p>Hello! My name is Kyle Bradshaw and I'm a full-stack developer with a passion for coding and a knack for problem-solving. I thrive on the challenges of coding and enjoy using software to build innovative solutions for users.</p>
+                </div>
+                <div class="col-md-5 offset-lg-1">
+                  <div class="row mt-2">
+                    <h2 class="h2 fw-light mb-4">Bio</h2>
+                    <div class="col-sm-5">
+                      <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
+                    </div>
+                    <div class="col-sm-7"><a class="pb-2" href="mailto:kylebradshaw18@gmail.com?subject=Website Contact" title="Email">KyleBradshaw18@gmail.com</a></div>
+                    <div class="col-sm-5">
+                      <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Phone</div>
+                    </div>
+                    <div class="col-sm-7"><a class="pb-2" href="tel:+18452402066" title="Phone">(845) 240-2066</a></div>
+                    <div class="col-sm-5">
+                      <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Address</div>
+                    </div>
+                    <div class="col-sm-7"><a class="pb-2" href="https://www.google.com/maps/place/Hopewell+Junction,+NY+12533">Hopewell Junction, New York</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
+            <div class="work-experience-section">
+              <h2 class="h2 fw-light mb-4">Work Experience</h2>
+              <div class="timeline">
+                <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">Manager of Development <span class="text-muted h6">@ <a href="https://precisioncare.com" >PrecisionCare Software</a></span></div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">May, 2023 - Present</div>
+                    <ul>
+                      <li>Lead and mentor a global team of 15 software developers</li>
+                      <li>Oversee the development life cycle from planning, design, development, testing, deployment and maintenance</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">Software Developer <span class="text-muted h6">@ <a href="https://precisioncare.com" >PrecisionCare Software</a></span></div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">August, 2017 - January, 2023</div>
+                    <ul>
+                      <li>Streamlined deployment process by implementing automated releases initiated through source control</li>
+                      <li>Evaluated and adopted new technologies, tools, and frameworks such as .NET Core & Angular 15 to improve software development processes and capabilities</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">Software Developer (Intern) <span class="text-muted h6">@ <a href="https://precisioncare.com" >PrecisionCare Software</a></span></div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">January, 2016 - July, 2017</div>
+                    <ul>
+                      <li>Provided technical support, debugged, and resolved software issues</li>
+                      <li>Wrote, tested, and fixed code in languages such as C#, SQL, Visual Basic, JavaScript, HTML and CSS</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="education">
+            <div class="education-section">
+              <h2 class="h2 fw-light mb-4">Education</h2>
+              <div class="timeline">
+                <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">Bachelors of Science, Computer Science <span class="text-muted h6">from <a href="https://marist.edu">Marist College</a></span></div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">2015 - 2017</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <footer id="footer"><div class="container"><div class="row centered"><div class="col-md-8 col-md-offset-2" id="FooterIcons"></div></div></div></footer>
+    </div>
+    <script src="scripts/mdb.min.js?ver=1.2.1"></script>
+    <script src="scripts/aos.js?ver=1.2.1"></script>
+    <script src="scripts/main.js?ver=1.2.1"></script>
   </body>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script>
 </html>
